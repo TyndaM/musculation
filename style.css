@@ -93,3 +93,68 @@ header{
 .ico-res i:hover {
     transform: scale(2);
 }
+/* Responsive */
+@media (max-width:991px){
+    section{
+        padding: 50px;
+        background: url("./images/img2.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 30px;
+    }
+    h2{
+        line-height: 1em;
+    }
+    .boite-text{
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 50px 20px;
+    }
+    .navigation{
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigation a {
+        margin: 20px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    .navigation a:hover {
+        background-color: #fff;
+        font-weight: bold;
+    }
+    .menu-Toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url("./images/menu.png");
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .menu-Toggle.active {
+        background: url("./images/close.png");
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .navigation.active {
+        display: flex;
+    }
+}
